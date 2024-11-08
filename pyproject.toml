@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "weather"
+version = "0.1.0"
+description = ""
+authors = ["Nick Arini <nick@generative.vision>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+requests = "^2.32.3"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+weather = "weather.cli:cli"
